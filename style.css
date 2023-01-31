@@ -57,4 +57,9 @@ main {
     overflow-y: auto;
     height: 100vh;
     width: 250px;
+    position: fixed;
+   }
+
+   .links-sidebar{
+    margin-top:50px;
    }
