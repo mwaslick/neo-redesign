@@ -59,7 +59,12 @@ main {
     width: 250px;
     position: fixed;
    }
+   
+   .avatar {
+    padding-top:7px;
+    padding-right: 5px;
+   }
 
-   .links-sidebar{
-    margin-top:50px;
+   .neomail-list {
+    padding-bottom: 5px !important;
    }
