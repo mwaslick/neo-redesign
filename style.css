@@ -59,7 +59,12 @@ main {
     width: 250px;
     position: fixed;
    }
-   
+
+   #neomail-inbox-list {
+    max-height: 300px;
+    overflow-y: auto;
+   }
+
    .avatar {
     padding-top:7px;
     padding-right: 5px;

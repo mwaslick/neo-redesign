@@ -22,37 +22,9 @@
                     <button class="btn btn-outline-success" type="submit">Search</button>
                   </form>
 
-                  <a class="navbar-brand" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="Inbox" data-bs-content-id="neomail-inbox">
-                    <img src="images/neomailicon.png" alt="Neomail" width="40" height="40">
-                  </a>
-
-                    <div id="neomail-inbox" class="d-none">
-                        <div class="list-group">
-                        <a class="list-group-item list-group-item-action neomail-list border-bottom" href="">
-                            <img src="images/kadavatar.gif" class="float-start avatar">
-                            <span class="fw-semibold">neouser123</span> <br>
-                            Thank you for your offer on my Trading Post lot! I'm sending the items...
-                        </a>
-                        <a class="list-group-item list-group-item-action neomail-list border-bottom" href="">
-                            <img src="images/fbavatar.gif" class="float-start avatar">
-                            <span class="fw-semibold">neouser456</span> <br>
-                            I love your pets! Where did you get your Maraquan-themed wearables?
-                        </a>
-                        <a class="list-group-item list-group-item-action neomail-list border-bottom" href="">
-                            <img src="images/illusendollavatar.gif" class="float-start avatar">
-                            <span class="fw-semibold">neouser789</span> <br>
-                            Thank you for the paint brush!
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="">
-                            <span class="fw-semibold">Go to Neomail</span></a>
-                        </div>
-                    </div>
-
                   
 
-                  <a class="navbar-brand" href="#">
-                    <img src="images/neofriends.png" alt="Neofriends" width="40" height="40">
-                  </a>
+                  
 
                   <span class="nav-item">
                     <b>NP:</b> 100,000
@@ -213,20 +185,56 @@
                                     <span id="time"></span> NST <br>
                                 </div> 
                             </a>
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-header">
-                                  News
+
+                            <a tabindex="0" id="neomail-popover" data-bs-toggle="popover" data-bs-trigger: data-bs-trigger="focus" data-bs-placement="bottom" data-bs-title="Neomail Inbox" data-bs-content-id="neomail-inbox">
+                                <img src="images/neomailicon.png" alt="Neomail" width="40" height="40">
+                            </a>
+            
+                                <div id="neomail-inbox" class="d-none">
+                                    <div class="list-group" id="neomail-inbox-list">
+                                    <a class="list-group-item list-group-item-action neomail-list border-bottom" href="">
+                                        <img src="images/kadavatar.gif" class="float-start avatar">
+                                        <span class="fw-semibold">neouser123</span> <br>
+                                        Thank you for your offer on my Trading Post lot! I'm sending the items...
+                                    </a>
+                                    <a class="list-group-item list-group-item-action neomail-list border-bottom" href="">
+                                        <img src="images/fbavatar.gif" class="float-start avatar">
+                                        <span class="fw-semibold">neouser456</span> <br>
+                                        I love your pets! Where did you get your Maraquan-themed wearables?
+                                    </a>
+                                    <a class="list-group-item list-group-item-action neomail-list border-bottom" href="">
+                                        <img src="images/illusendollavatar.gif" class="float-start avatar">
+                                        <span class="fw-semibold">neouser789</span> <br>
+                                        Thank you for the paint brush!
+                                    </a>
+                                    <a class="list-group-item list-group-item-action neomail-list border-bottom" href="">
+                                        <img src="images/christmasaishaavatar.gif" class="float-start avatar">
+                                        <span class="fw-semibold">neouser2023</span> <br>
+                                        i LOVE draiks, but aishas are my favorite neopet. what is yours?
+                                    </a>
+                                    </div>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">The newest issue of the Neopian Times has been released!</li>
-                                  <li class="list-group-item">The Beauty Contest winners have been announced!</li>
-                                  <li class="list-group-item">The Art Gallery has been updated!</li>
-                                  <div class="card-body">
-                                    <a href="#" class="card-link">More</a>
+
+
+                                <a href="#" tabindex="0" id="neomail-popover" data-bs-toggle="popover" data-bs-trigger: data-bs-trigger="focus" data-bs-placement="bottom" data-bs-title="2 Neofriends Online" data-bs-content-id="neofriends-online">
+                                    <img src="images/neofriends.png" alt="Neofriends" width="40" height="40">
+                                  </a>
+
+                                  <div id="neofriends-online" class="d-none">
+                                    <div id="neofriend">
+                                        <img src="images/christmasaishaavatar.gif"> <br>
+                                        neouser2023
+                                    </div>
+
+                                    <div id="neofriend">
+                                        <img src="images/fbavatar.gif"> <br>
+                                        neouser456
+                                    </div>
                                   </div>
-                                
-                                </ul>
-                              </div>
+
+
+
+                            
                             </div>
                         
                     </div>
