@@ -2,7 +2,7 @@
     background-image: url("images/banner_bg.png");
 }
 
-main {
+body {
     height: 100vh;
     height: -webkit-fill-available;
     max-height: 100vh;
@@ -78,4 +78,14 @@ main {
    
 #homepage-tabs {
     padding-top: 10px;
+}
+
+.pet-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.middle-wrapper {
+    overflow-y: auto;
+    max-height: 90vh;
 }
