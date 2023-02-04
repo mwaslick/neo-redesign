@@ -56,8 +56,6 @@ main {
 .sidebar-wrapper{
     overflow-y: auto;
     height: 100vh;
-    width: 250px;
-    position: fixed;
 }
 
 #neomail-inbox-list {
@@ -78,3 +76,6 @@ main {
     margin-left: 1.25rem;
 }
    
+#homepage-tabs {
+    padding-top: 10px;
+}

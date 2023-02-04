@@ -60,7 +60,7 @@
 
         
             <div class="row">
-                <div class="col-md-2 d-none d-md-block">
+                <div class="col-md-3 d-none d-md-block">
                     <div class="container">
                         <div class="sidebar-wrapper">
                         <div class="flex-shrink-0 p-3 d-none d-md-block overflow-auto">
@@ -89,7 +89,6 @@
                                     <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Create a Pet</a></li>
                                     <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Adopt a Pet</a></li>
                                     <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Customise</a></li>
-                                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Closet</a></li>
                                   </ul>
                                 </div>
                               </li>
@@ -168,10 +167,6 @@
                                   </ul>
                                 </div>
                               </li>
-                              
-                              
-
-
 
                               <li class="border-top my-3"></li>
 
@@ -183,7 +178,7 @@
                 </div>
                 <div class="col-md-7 col-xs-12">
                     <div class="container">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs" id="homepage-tabs" role="tablist">
                             <li class="nav-item" role="presentation">
                               <button class="nav-link active" id="pets-tab" data-bs-toggle="tab" data-bs-target="#pets" type="button" role="tab" aria-controls="home" aria-selected="true">My Pets</button>
                             </li>
@@ -197,18 +192,32 @@
                           
                           <!-- Tab panes -->
                           <div class="tab-content">
-                            <div class="tab-pane active" id="pets" role="tabpanel" aria-labelledby="pets-tab" tabindex="0">My Pets</div>
-                            <div class="tab-pane" id="inv" role="tabpanel" aria-labelledby="inv-tab" tabindex="0">Inventory</div>
-                            <div class="tab-pane" id="sdb" role="tabpanel" aria-labelledby="sdb-tab" tabindex="0">Safety Deposit Box</div>
+                            <div class="tab-pane active border-bottom border-start border-end" id="pets" role="tabpanel" aria-labelledby="pets-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="card">
+                                            <img src="images/faerieixirender.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane border-bottom border-start border-end" id="inv" role="tabpanel" aria-labelledby="inv-tab" tabindex="0">Inventory</div>
+                            <div class="tab-pane border-bottom border-start border-end" id="sdb" role="tabpanel" aria-labelledby="sdb-tab" tabindex="0">Safety Deposit Box</div>
                           </div>
                           
                           
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="container">
-                        <div class="flex-shrink-0 p-3 d-none d-md-block overflow-auto">
+                        <div class="flex-shrink-0 p-3 d-none d-lg-block overflow-auto">
                             <a class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom" href="">
                                 <div id="clock">
                                     <span id="time"></span> NST <br>
