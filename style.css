@@ -53,23 +53,28 @@ main {
     overflow-y: auto;
   }
 
-  .sidebar-wrapper{
+.sidebar-wrapper{
     overflow-y: auto;
     height: 100vh;
     width: 250px;
     position: fixed;
-   }
+}
 
-   #neomail-inbox-list {
+#neomail-inbox-list {
     max-height: 300px;
     overflow-y: auto;
-   }
+}
 
-   .avatar {
+.avatar {
     padding-top:7px;
     padding-right: 5px;
-   }
+}
 
-   .neomail-list {
+.neomail-list {
     padding-bottom: 5px !important;
-   }
+}
+
+.pet-data {
+    margin-left: 1.25rem;
+}
+   
