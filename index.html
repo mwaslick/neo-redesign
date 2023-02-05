@@ -43,8 +43,6 @@
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">My Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Inventory</a></li>
-                      <li><a class="dropdown-item" href="#">Safety Deposit Box</a></li>
                       <li><a class="dropdown-item" href="#">Quick Stock</a></li>
                       <li><a class="dropdown-item" href="#">My Shop</a></li>
                       <li><a class="dropdown-item" href="#">My Gallery</a></li>
@@ -184,7 +182,7 @@
                         <ul class="nav nav-tabs" id="homepage-tabs" role="tablist">
                             <li class="nav-item" role="presentation">
                               <button class="nav-link active" id="pets-tab" data-bs-toggle="tab" data-bs-target="#pets" type="button" role="tab" aria-controls="home" aria-selected="true">
-                                <span class="small">My Pets</span>
+                                <span class="small">Pets</span>
                             </button>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -197,6 +195,11 @@
                                 <span class="small">Safety Deposit Box</span>
                               </button>
                             </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="bookmarks-tab" data-bs-toggle="tab" data-bs-target="#bookmarks" type="button" role="tab" aria-controls="messages" aria-selected="false">
+                                  <span class="small">Bookmarks</span>
+                                </button>
+                              </li>
                           </ul>
                           
                           <!-- Tab panes -->
@@ -321,42 +324,42 @@
                             </div>
                         </div>
                         <div class="tab-pane border-bottom border-start border-end" id="inv" role="tabpanel" aria-labelledby="inv-tab" tabindex="0">
-                            <div class="btn-group" role="group" aria-label="Inventory Directory">
-                                <button type="button" class="btn btn-primary">
+                            <div class="btn-group d-flex justify-content-center" role="group" aria-label="Inventory Directory">
+                                <button type="button" class="btn btn-primary active">
                                     <i class="fa-solid fa-star"></i>
-                                    <span class="small">All</span></button>
+                                    <span class="small d-none d-lg-block">All</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-utensils"></i>
-                                    <span class="small">Food</span></button>
+                                    <span class="small d-none d-lg-block">Food</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-book"></i>
-                                    <span class="small">Books</span></button>
+                                    <span class="small d-none d-lg-block">Books</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-shirt"></i>
-                                    <span class="small">Wearables</span></button>
+                                    <span class="small d-none d-lg-block">Wearables</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-couch"></i>
-                                    <span class="small">Furniture</span></button>
+                                    <span class="small d-none d-lg-block">Furniture</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-gamepad"></i>
-                                    <span class="small">Toys</span></button>
+                                    <span class="small d-none d-lg-block">Toys</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-prescription-bottle-medical"></i>
-                                    <span class="small">Healing</span></button>
+                                    <span class="small d-none d-lg-block">Healing</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-brush"></i>
-                                    <span class="small">Grooming</span></button>
+                                    <span class="small d-none d-lg-block">Grooming</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-shield"></i>
-                                    <span class="small">Equipment</span></button>
+                                    <span class="small d-none d-lg-block">Equipment</span></button>
                                 <button type="button" class="btn btn-primary">
                                     <i class="fa-solid fa-ellipsis"></i>
-                                    <span class="small">Miscellaneous</span></button>
+                                    <span class="small d-none d-lg-block">Misc.</span></button>
                               </div>
                             <div class="container">
                                 <div class="d-flex flex-wrap justify-content-center">
                                     <div class="inv-item">
-                                        <img src="./images/bottledfaerie.gif">
+                                        <img src="./images/bottledfaerie.gif" data-bs-toggle="modal" data-bs-target="#itemModal">
                                         <p class="item-title">Weak Bottled Light Faerie</p>
                                     </div>
                                     <div class="inv-item">
@@ -414,9 +417,63 @@
                                 </div>
                                 
                             </div>
+
+                            <div class="modal" id="itemModal" tabindex="-1" aria-labelledby="itemModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="itemModalLabel">Weak Bottled Light Faerie</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="./images/bottledfaerie.gif" class="float-start">
+                                       <p> <strong>Type: </strong>Magic Item<br>
+                                        <strong>Weight: </strong>1 lbs<br>
+                                        <strong>Rarity: </strong>88<br>
+                                        <strong>Est. Value: </strong>1,535 NP
+                                       </p>
+                                       <span>
+                                        Balthazar has placed a Tier 1 protection spell on this bottle. Release the faerie and your Neopet will receive a humble light blessing.
+                                       </span>
+                                      <div class="d-flex flex-row p-1 justify-content-center">
+                                        <div class="dropdown-center">
+                                          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Choose an Action
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Bless Your Pet</a></li>
+                                            <li><a class="dropdown-item" href="#">Put into your Safety Deposit Box</a></li>
+                                            <li><a class="dropdown-item" href="#">Donate Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Discard Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Put into your Shop</a></li>
+                                            <li><a class="dropdown-item" href="#">Put into your Gallery</a></li>
+                                            <li><a class="dropdown-item" href="#">Give to Neofriend</a></li>
+                                            <li><a class="dropdown-item" href="#">Put up for Auction</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div class="d-flex flex-row justify-content-center">
+                                      <span class="fw-semibold p-1">Search in: </span>
+                                      <div class="btn-group btn-group-sm" role="group" aria-label="Item search">
+                                        <button type="button" class="btn btn-primary">Shop Wizard</button>
+                                        <button type="button" class="btn btn-primary">Auctions</button>
+                                        <button type="button" class="btn btn-primary">Trading Post</button>
+                                      </div>
+                                    </div>
+                                      
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                              
                         </div>
+
+
                         <div class="tab-pane border-bottom border-start border-end" id="sdb" role="tabpanel" aria-labelledby="sdb-tab" tabindex="0">Safety Deposit Box</div>
-                          </div>
+                        
+
+                        <div class="tab-pane border-bottom border-start border-end" id="bookmarks" role="tabpanel" aria-labelledby="bookmarks-tab" tabindex="0">Bookmarks</div>
+                        </div>
                           
                           
                     </div>
